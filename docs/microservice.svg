@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="62 67 811 570" class="diagram" style="left: auto;right: 30px;top: 105px;" height="420px" width="550px">
+  <style type="text/css">
+  /*  */
+  .label-large, .label-medium, .label-small {
+    font-family: Open Sans;
+    font-weight: 600;
+  }
+  .label-large { font-size: 24px; }
+  .label-medium { font-size: 20px; }
+  .label-small { font-size: 16px; }
+  /*  */
+</style>
+  <defs>
+    <filter id="anatomy-modules-dropshadow" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"></feGaussianBlur>
+      <feOffset in="blur" result="offset" dx="0" dy="2"></feOffset>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"></feFlood>
+      <feComposite in="flood" in2="offset" operator="in"></feComposite>
+    </filter>
+    <linearGradient x1="0" x2="1" id="anatomy-modules-base-gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"></stop>
+      <stop offset="1" stop-color="#e5e5e5"></stop>
+    </linearGradient>
+    <linearGradient id="anatomy-modules-microservice-gradient" xlink:href="#anatomy-modules-base-gradient" gradientTransform="translate(288.78676 74.906632) rotate(90) scale(550.1867)"></linearGradient>
+    <font-face font-family="Helvetica" font-size="24" units-per-em="1000" underline-position="-75.683594" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.72656" ascent="770.01953" descent="-229.98047" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold">
+      </font-face-name></font-face-src>
+    </font-face>
+    <linearGradient id="anatomy-modules-microservice-legend-gradient" xlink:href="#anatomy-modules-base-gradient" gradientTransform="translate(590.04567 325.92818) rotate(90) scale(39.177753)"></linearGradient>
+    <pattern id="anatomy-modules-black-diagonal-stripes" xlink:href="#base-pattern">
+      <rect width="4" height="4" fill="#ffffff"></rect>
+      <path d="M -1, 2 l 6, 0" stroke="#000000" stroke-width="2"></path>
+    </pattern>
+    <pattern id="base-pattern" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(135 5 5)">
+</pattern>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Microservice Testing</title>
+    <g>
+      <title>Anatomy :: Modules</title>
+      <g>
+        <use xlink:href="#anatomy-modules-microservice" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-resources" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-gateways" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-http-client" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-repositories" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-data-mappers" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-domain" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-services" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-microservice-legend" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-protocol-legend" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-domain-legend" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-external-legend" filter="url(#anatomy-modules-dropshadow)"></use>
+        <use xlink:href="#anatomy-modules-persistence-legend" filter="url(#anatomy-modules-dropshadow)"></use>
+      </g>
+      <g id="anatomy-modules-microservice">
+        <path d="M 76.28677 74.906632 L 501.28674 74.906632 C 504.04817 74.906632 506.28674 77.14521 506.28674 79.90663 L 506.28674 620.09334 C 506.28674 622.85476 504.04817 625.09334 501.28674 625.09334 L 76.28677 625.09334 C 73.52535 625.09334 71.28677 622.85476 71.28677 620.09334 L 71.28677 79.90663 C 71.28677 77.14521 73.52535 74.906632 76.28677 74.906632 Z" fill="url(#anatomy-modules-microservice-gradient)" stroke="url(#anatomy-modules-black-diagonal-stripes)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+      </g>
+      <g id="anatomy-modules-resources">
+        <path d="M 100.53675 100.093344 L 476.53675 100.093344 C 478.7459 100.093344 480.53675 101.884205 480.53675 104.093344 L 480.53675 158.09334 C 480.53675 160.30248 478.7459 162.09334 476.53675 162.09334 L 100.53675 162.09334 C 98.32761 162.09334 96.53675 160.30248 96.53675 158.09334 L 96.53675 104.093344 C 96.53675 101.884205 98.32761 100.093344 100.53675 100.093344 Z" fill="#8eefc8" stroke="#3fb067" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+        <text transform="translate(101.53675 116.593344)" fill="#128d51" style="font-family:Open Sans;" class="label-large">
+          <tspan fill="#128d51" x="125.634766" y="23" textLength="122.73047">Resources</tspan>
+        </text>
+      </g>
+      <g id="anatomy-modules-gateways">
+        <path d="M 344.2602 493 L 344.2602 189.79687 C 344.2602 187.58773 346.05106 185.79687 348.2602 185.79687 L 399.28675 185.79687 C 401.4959 185.79687 403.28675 187.58773 403.28675 189.79687 L 403.28675 493 C 403.28675 495.20914 401.4959 497 399.28675 497 C 399.28675 497 399.28675 497 399.28675 497 L 348.2602 497 C 346.05106 497 344.2602 495.20914 344.2602 493 Z" fill="#d282c6" stroke="#87447f" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+        <text transform="translate(359.27348 492) rotate(-90)" fill="#722166" style="font-family:Open Sans;" class="label-large">
+          <tspan fill="#722166" x="94.568364" y="23" textLength="112.066406">Gateways</tspan>
+        </text>
+      </g>
+      <g id="anatomy-modules-http-client">
+        <path d="M 421.5102 493 L 421.5102 189.79687 C 421.5102 187.58773 423.30106 185.79687 425.5102 185.79687 L 476.53675 185.79687 C 478.7459 185.79687 480.53675 187.58773 480.53675 189.79687 L 480.53675 493 C 480.53675 495.20914 478.7459 497 476.53675 497 L 425.5102 497 C 423.30106 497 421.5102 495.20914 421.5102 493 Z" fill="#d282c6" stroke="#87447f" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+        <text transform="translate(436.52348 492) rotate(-90)" fill="#722166" style="font-family:Open Sans;" class="label-large">
+          <tspan fill="#722166" x="82.60352" y="23" textLength="135.99609">HTTP Client</tspan>
+        </text>
+      </g>
+      <g id="anatomy-modules-repositories">
+        <path d="M 100.53675 497 L 316.53675 497 C 318.74589 497 320.53675 495.20914 320.53675 493 L 320.53675 439 C 320.53675 436.79086 318.74589 435 316.53675 435 L 100.53675 435 C 98.32761 435 96.53675 436.79086 96.53675 439 L 96.53675 493 C 96.53675 495.20914 98.32761 497 100.53675 497 Z" fill="#81ebf1" stroke="#36a2ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+        <text transform="translate(101.53675 451.5)" fill="#118c96" style="font-family:Open Sans;" class="label-large">
+          <tspan fill="#118c96" x="34.314453" y="23" textLength="145.37109">Repositories</tspan>
+        </text>
+      </g>
+      <g id="anatomy-modules-data-mappers">
+        <path d="M 100.53675 590.09335 L 476.53675 590.09335 C 478.7459 590.09335 480.53675 588.3025 480.53675 586.09335 L 480.53675 532.09335 C 480.53675 529.8842 478.7459 528.09335 476.53675 528.09335 L 100.53675 528.09335 C 98.32761 528.09335 96.53675 529.8842 96.53675 532.09335 L 96.53675 586.09335 C 96.53675 588.3025 98.32761 590.09335 100.53675 590.09335 Z" fill="#f893c1" stroke="#c23878" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+        <text transform="translate(101.53675 544.59335)" fill="#c2276c" style="font-family:Open Sans;" class="label-large">
+          <tspan fill="#c2276c" x="70.310547" y="23" textLength="233.3789">Data Mappers / ORM</tspan>
+        </text>
+      </g>
+      <g id="anatomy-modules-domain">
+        <path d="M 100.53675 408.39843 L 316.53675 408.39843 C 318.74589 408.39843 320.53675 406.60757 320.53675 404.39843 L 320.53675 278.39843 C 320.53675 276.1893 318.74589 274.39843 316.53675 274.39843 L 100.53675 274.39843 C 98.32761 274.39843 96.53675 276.1893 96.53675 278.39843 L 96.53675 404.39843 C 96.53675 406.60757 98.32761 408.39843 100.53675 408.39843 Z" fill="#81ebf1" stroke="#36a2ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+        <text transform="translate(101.53675 326.89843)" fill="#118c96" style="font-family:Open Sans;" class="label-large">
+          <tspan fill="#118c96" x="62.996094" y="23" textLength="88.00781">Domain</tspan>
+        </text>
+      </g>
+      <g id="anatomy-modules-services">
+        <path d="M 100.53675 247.79687 L 316.53675 247.79687 C 318.74589 247.79687 320.53675 246.006 320.53675 243.79687 L 320.53675 189.79687 C 320.53675 187.58773 318.74589 185.79687 316.53675 185.79687 L 100.53675 185.79687 C 98.32761 185.79687 96.53675 187.58773 96.53675 189.79687 L 96.53675 243.79687 C 96.53675 246.006 98.32761 247.79687 100.53675 247.79687 Z" fill="#81ebf1" stroke="#36a2ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+        <text transform="translate(101.53675 202.29687)" fill="#118c96" style="font-family:Open Sans;" class="label-large">
+          <tspan fill="#118c96" x="28.941406" y="23" textLength="156.11719">Service Layer</tspan>
+        </text>
+      </g>
+      <g id="anatomy-modules-microservice-legend">
+        <path d="M 553.69138 325.92818 L 626.39997 325.92818 C 629.1614 325.92818 631.39997 328.16676 631.39997 330.92818 L 631.39997 360.10594 C 631.39997 362.86736 629.1614 365.10594 626.39997 365.10594 L 553.69138 365.10594 C 550.92996 365.10594 548.69138 362.86736 548.69138 360.10594 L 548.69138 330.92818 C 548.69138 328.16676 550.92996 325.92818 553.69138 325.92818 Z" fill="url(#anatomy-modules-microservice-legend-gradient)" stroke="url(#anatomy-modules-black-diagonal-stripes)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+      </g>
+      <text transform="translate(653.8123 331.01706)" fill="gray" style="font-family:Open Sans;" class="label-large">
+        <tspan fill="gray" x="0" y="23" textLength="213.36328">Network Boundary</tspan>
+      </text>
+      <g id="anatomy-modules-protocol-legend">
+        <path d="M 552.69138 385.10594 L 627.39997 385.10594 C 629.6091 385.10594 631.39997 386.8968 631.39997 389.10594 L 631.39997 420.2837 C 631.39997 422.49283 629.6091 424.2837 627.39997 424.2837 L 552.69138 424.2837 C 550.48224 424.2837 548.69138 422.49283 548.69138 420.2837 L 548.69138 389.10594 C 548.69138 386.8968 550.48224 385.10594 552.69138 385.10594 Z" fill="#8eefc8" stroke="#3fb067" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+      </g>
+      <text transform="translate(653.8123 390.19481)" fill="#128d51" style="font-family:Open Sans;" class="label-large">
+        <tspan fill="#128d51" x="0" y="23" textLength="97.33594">Protocol</tspan>
+      </text>
+      <g id="anatomy-modules-domain-legend">
+        <path d="M 552.69138 444.2837 L 627.39997 444.2837 C 629.6091 444.2837 631.39997 446.07455 631.39997 448.2837 L 631.39997 479.46144 C 631.39997 481.67058 629.6091 483.46144 627.39997 483.46144 L 552.69138 483.46144 C 550.48224 483.46144 548.69138 481.67058 548.69138 479.46144 L 548.69138 448.2837 C 548.69138 446.07455 550.48224 444.2837 552.69138 444.2837 Z" fill="#81ebf1" stroke="#36a2ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+      </g>
+      <text transform="translate(653.8123 449.37257)" fill="#118c96" style="font-family:Open Sans;" class="label-large">
+        <tspan fill="#118c96" x="0" y="23" textLength="88.00781">Domain</tspan>
+      </text>
+      <g id="anatomy-modules-external-legend">
+        <path d="M 552.69138 503.46144 L 627.39997 503.46144 C 629.6091 503.46144 631.39997 505.2523 631.39997 507.46144 L 631.39997 538.6392 C 631.39997 540.84834 629.6091 542.6392 627.39997 542.6392 L 552.69138 542.6392 C 550.48224 542.6392 548.69138 540.84834 548.69138 538.6392 L 548.69138 507.46144 C 548.69138 505.2523 550.48224 503.46144 552.69138 503.46144 Z" fill="#d282c6" stroke="#87447f" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+      </g>
+      <text transform="translate(653.8123 508.55032)" fill="#722166" style="font-family:Open Sans;" class="label-large">
+        <tspan fill="#722166" x="0" y="23" textLength="15.0078125">E</tspan>
+        <tspan fill="#722166" x="15.0078125" y="23" textLength="12.347656">x</tspan>
+        <tspan fill="#722166" x="27.355469" y="23" textLength="6.9921875">t</tspan>
+        <tspan fill="#722166" x="34.347656" y="23" textLength="12.347656">e</tspan>
+        <tspan fill="#722166" x="46.695312" y="23" textLength="8.3398438">r</tspan>
+        <tspan fill="#722166" x="55.035156" y="23" textLength="13.660156">n</tspan>
+        <tspan fill="#722166" x="68.695312" y="23" textLength="12.347656">a</tspan>
+        <tspan fill="#722166" x="81.04297" y="23" textLength="13.3359375">l </tspan>
+      </text>
+      <g id="anatomy-modules-persistence-legend">
+        <path d="M 552.69138 562.6392 L 627.39997 562.6392 C 629.6091 562.6392 631.39997 564.43006 631.39997 566.6392 L 631.39997 597.81695 C 631.39997 600.0261 629.6091 601.81695 627.39997 601.81695 L 552.69138 601.81695 C 550.48224 601.81695 548.69138 600.0261 548.69138 597.81695 L 548.69138 566.6392 C 548.69138 564.43006 550.48224 562.6392 552.69138 562.6392 Z" fill="#f893c1" stroke="#c23878" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+      </g>
+      <text transform="translate(653.8123 567.72808)" fill="#c2276c" style="font-family:Open Sans;" class="label-large">
+        <tspan fill="#c2276c" x="0" y="23" textLength="15.0078125">P</tspan>
+        <tspan fill="#c2276c" x="15.0078125" y="23" textLength="12.347656">e</tspan>
+        <tspan fill="#c2276c" x="27.355469" y="23" textLength="8.3398438">r</tspan>
+        <tspan fill="#c2276c" x="35.695312" y="23" textLength="12.347656">s</tspan>
+        <tspan fill="#c2276c" x="48.04297" y="23" textLength="5.6679688">i</tspan>
+        <tspan fill="#c2276c" x="53.710938" y="23" textLength="12.347656">s</tspan>
+        <tspan fill="#c2276c" x="66.058594" y="23" textLength="6.9921875">t</tspan>
+        <tspan fill="#c2276c" x="73.05078" y="23" textLength="12.347656">e</tspan>
+        <tspan fill="#c2276c" x="85.39844" y="23" textLength="13.660156">n</tspan>
+        <tspan fill="#c2276c" x="99.058594" y="23" textLength="12.347656">c</tspan>
+        <tspan fill="#c2276c" x="111.40625" y="23" textLength="12.347656">e</tspan>
+        <tspan fill="#c2276c" x="123.753906" y="23" textLength="5.6679688"> </tspan>
+      </text>
+    </g>
+  </g>
+</svg>

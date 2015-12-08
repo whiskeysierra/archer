@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="48 6 729 672" class="diagram" style="left: auto;right: 30px;top: 105px;" height="450px" width="600px">
+    <style type="text/css">
+        /*  */
+        .label-large, .label-medium, .label-small {
+        font-family: Open Sans;
+        font-weight: 600;
+        }
+        .label-large { font-size: 24px; }
+        .label-medium { font-size: 20px; }
+        .label-small { font-size: 16px; }
+        /*  */
+    </style>
+    <defs>
+        <filter id="anatomy-connections-dropshadow" filterUnits="userSpaceOnUse">
+            <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"></feGaussianBlur>
+            <feOffset in="blur" result="offset" dx="0" dy="2"></feOffset>
+            <feFlood flood-color="black" flood-opacity=".5" result="flood"></feFlood>
+            <feComposite in="flood" in2="offset" operator="in"></feComposite>
+        </filter>
+        <linearGradient x1="0" x2="1" id="anatomy-connections-base-gradient" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="white"></stop>
+            <stop offset="1" stop-color="#e5e5e5"></stop>
+        </linearGradient>
+        <linearGradient id="anatomy-connections-microservice-gradient" xlink:href="#anatomy-connections-base-gradient" gradientTransform="translate(247.60035 50.813265) rotate(90) scale(465.51315)"></linearGradient>
+        <font-face font-family="Helvetica" font-size="24" units-per-em="1000" underline-position="-75.683594" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.72656" ascent="770.01953" descent="-229.98047" font-weight="bold">
+            <font-face-src>
+                <font-face-name name="Helvetica-Bold">
+                </font-face-name></font-face-src>
+        </font-face>
+        <linearGradient id="anatomy-connections-microservice-legend-gradient" xlink:href="#anatomy-connections-base-gradient" gradientTransform="translate(511.02132 359.05994) rotate(90) scale(31.180483)"></linearGradient>
+        <pattern id="anatomy-connections-black-diagonal-stripes" xlink:href="#base-pattern">
+            <rect width="4" height="4" fill="#ffffff"></rect>
+            <path d="M -1, 2 l 6, 0" stroke="#000000" stroke-width="2"></path>
+        </pattern>
+        <pattern id="anatomy-connections-blue-diagonal-stripes" xlink:href="#base-pattern">
+            <rect width="4" height="4" fill="#ffffff"></rect>
+            <path d="M -1, 2 l 6, 0" stroke="#66285c" stroke-width="2"></path>
+        </pattern>
+        <pattern id="anatomy-connections-purple-diagonal-stripes" xlink:href="#base-pattern">
+            <rect width="4" height="4" fill="#ffffff"></rect>
+            <path d="M -1, 2 l 6, 0" stroke="#c72d69" stroke-width="2"></path>
+        </pattern>
+        <pattern id="base-pattern" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(135 5 5)">
+        </pattern>
+    </defs>
+    <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+        <title>Microservice Testing</title>
+        <g>
+            <title>Anatomy :: Connections</title>
+            <g>
+                <use xlink:href="#anatomy-connections-microservice" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-resources" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-gateways" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-http-client" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-repositories" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-data-mappers" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-domain" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-services" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-microservice-legend" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-protocol-legend" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-domain-legend" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-external-legend" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-persistence-legend" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-external-service" filter="url(#anatomy-connections-dropshadow)"></use>
+                <use xlink:href="#anatomy-connections-external-datastore" filter="url(#anatomy-connections-dropshadow)"></use>
+            </g>
+            <path d="M 53 40 L 442 40 C 443.10457 40 444 40.89543 444 42 L 444 673 C 444 674.10457 443.10457 675 442 675 L 53 675 C 51.89543 675 51 674.10457 51 673 L 51 42 C 51 40.89543 51.89543 40 53 40 Z" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke-dasharray="16,8,2,8"></path>
+            <g id="anatomy-connections-microservice">
+                <path d="M 68.573544 50.813265 L 426.62716 50.813265 C 429.38859 50.813265 431.62716 53.05184 431.62716 55.813265 L 431.62716 511.32642 C 431.62716 514.08784 429.38859 516.32642 426.62716 516.32642 L 68.573544 516.32642 C 65.81212 516.32642 63.573544 514.08784 63.573544 511.32642 L 63.573544 55.813265 C 63.573544 53.05184 65.81212 50.813265 68.573544 50.813265 Z" fill="url(#anatomy-connections-microservice-gradient)" stroke="url(#anatomy-connections-black-diagonal-stripes)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+            </g>
+            <g id="anatomy-connections-resources">
+                <path d="M 88.93756 72.12375 L 405.84009 72.12375 C 408.04923 72.12375 409.84009 73.91461 409.84009 76.12375 L 409.84009 120.58197 C 409.84009 122.79111 408.04923 124.58197 405.84009 124.58197 L 88.93756 124.58197 C 86.72842 124.58197 84.93756 122.79111 84.93756 120.58197 L 84.93756 76.12375 C 84.93756 73.91461 86.72842 72.12375 88.93756 72.12375 Z" fill="#8eefc8" stroke="#3fb067" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                <text transform="translate(89.93756 83.85286)" fill="#128d51" style="font-family:Open Sans;" class="label-large">
+                    <tspan fill="#128d51" x="96.08603" y="23" textLength="122.73047">Resources</tspan>
+                </text>
+            </g>
+            <g id="anatomy-connections-gateways">
+                <path d="M 294.53645 328.72825 L 294.53645 148.637515 C 294.53645 146.428376 296.32731 144.637515 298.53645 144.637515 L 340.47884 144.637515 C 342.68797 144.637515 344.47884 146.428376 344.47884 148.637515 L 344.47884 328.72825 C 344.47884 330.9374 342.68797 332.72825 340.47884 332.72825 C 340.47884 332.72825 340.47884 332.72825 340.47884 332.72825 L 298.53645 332.72825 C 296.32731 332.72825 294.53645 330.9374 294.53645 328.72825 Z" fill="#d282c6" stroke="#87447f" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                <text transform="translate(305.00764 327.72825) rotate(-90)" fill="#722166" style="font-family:Open Sans;" class="label-large">
+                    <tspan fill="#722166" x="33.012167" y="23" textLength="112.066406">Gateways</tspan>
+                </text>
+            </g>
+            <g id="anatomy-connections-http-client">
+                <path d="M 359.8977 328.72825 L 359.8977 148.637515 C 359.8977 146.428376 361.68856 144.637515 363.8977 144.637515 L 405.84009 144.637515 C 408.04923 144.637515 409.84009 146.428376 409.84009 148.637515 L 409.84009 328.72825 C 409.84009 330.9374 408.04923 332.72825 405.84009 332.72825 L 363.8977 332.72825 C 361.68856 332.72825 359.8977 330.9374 359.8977 328.72825 Z" fill="#d282c6" stroke="#87447f" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                <text transform="translate(370.3689 327.72825) rotate(-90)" fill="#722166" style="font-family:Open Sans;" class="label-large">
+                    <tspan fill="#722166" x="21.047323" y="23" textLength="135.99609">HTTP Client</tspan>
+                </text>
+            </g>
+            <g id="anatomy-connections-repositories">
+                <path d="M 88.93756 409.71778 L 405.84009 409.71778 C 408.04923 409.71778 409.84009 407.92692 409.84009 405.71778 L 409.84009 361.25956 C 409.84009 359.05042 408.04923 357.25956 405.84009 357.25956 L 88.93756 357.25956 C 86.72842 357.25956 84.93756 359.05042 84.93756 361.25956 L 84.93756 405.71778 C 84.93756 407.92692 86.72842 409.71778 88.93756 409.71778 Z" fill="#81ebf1" stroke="#36a2ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                <text transform="translate(89.93756 368.98867)" fill="#118c96" style="font-family:Open Sans;" class="label-large">
+                    <tspan fill="#118c96" x="84.765717" y="23" textLength="145.37109">Repositories</tspan>
+                </text>
+            </g>
+            <g id="anatomy-connections-data-mappers">
+                <path d="M 88.93756 486.71292 L 405.84009 486.71292 C 408.04923 486.71292 409.84009 484.92206 409.84009 482.71292 L 409.84009 438.2547 C 409.84009 436.04556 408.04923 434.2547 405.84009 434.2547 L 88.93756 434.2547 C 86.72842 434.2547 84.93756 436.04556 84.93756 438.2547 L 84.93756 482.71292 C 84.93756 484.92206 86.72842 486.71292 88.93756 486.71292 Z" fill="#f893c1" stroke="#c23878" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                <text transform="translate(89.93756 445.9838)" fill="#c2276c" style="font-family:Open Sans;" class="label-large">
+                    <tspan fill="#c2276c" x="40.76181" y="23" textLength="233.3789">Data Mappers / ORM</tspan>
+                </text>
+            </g>
+            <g id="anatomy-connections-domain">
+                <path d="M 120.48292 334.41485 L 237.48292 334.41485 C 239.69206 334.41485 241.48292 332.62399 241.48292 330.41485 L 241.48292 241.41485 C 241.48292 239.20571 239.69206 237.41485 237.48292 237.41485 L 120.48292 237.41485 C 118.27378 237.41485 116.48292 239.20571 116.48292 241.41485 L 116.48292 330.41485 C 116.48292 332.62399 118.27378 334.41485 120.48292 334.41485 Z" fill="#81ebf1" stroke="#36a2ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                <text transform="translate(121.48292 271.41485)" fill="#118c96" style="font-family:Open Sans;" class="label-large">
+                    <tspan fill="#118c96" x="13.496094" y="23" textLength="88.00781">Domain</tspan>
+                </text>
+            </g>
+            <g id="anatomy-connections-services">
+                <path d="M 150.5 212.63751 L 267.5 212.63751 C 269.70914 212.63751 271.5 210.84665 271.5 208.63751 L 271.5 148.637515 C 271.5 146.428376 269.70914 144.637515 267.5 144.637515 L 150.5 144.637515 C 148.29086 144.637515 146.5 146.428376 146.5 148.637515 L 146.5 208.63751 C 146.5 210.84665 148.29086 212.63751 150.5 212.63751 Z" fill="#81ebf1" stroke="#36a2ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                <text transform="translate(151.5 149.637515)" fill="#118c96" style="font-family:Open Sans;" class="label-large">
+                    <tspan fill="#118c96" x="14.796875" y="23" textLength="92.07422">Service </tspan>
+                    <tspan fill="#118c96" x="25.478516" y="52" textLength="64.04297">Layer</tspan>
+                </text>
+            </g>
+            <g id="anatomy-connections-microservice-legend">
+                <path d="M 483.1086 359.05994 L 538.93405 359.05994 C 541.69547 359.05994 543.93405 361.29852 543.93405 364.05994 L 543.93405 385.24042 C 543.93405 388.00185 541.69547 390.24042 538.93405 390.24042 L 483.1086 390.24042 C 480.34716 390.24042 478.1086 388.00185 478.1086 385.24042 L 478.1086 364.05994 C 478.1086 361.29852 480.34716 359.05994 483.1086 359.05994 Z" fill="url(#anatomy-connections-microservice-legend-gradient)" stroke="url(#anatomy-connections-black-diagonal-stripes)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+            </g>
+            <text transform="translate(562.79205 360.15018)" fill="#7b7b7b" style="font-family:Open Sans;" class="label-large">
+                <tspan fill="#7b7b7b" x="0" y="23" textLength="213.36328">Network Boundary</tspan>
+            </text>
+            <g id="anatomy-connections-protocol-legend">
+                <path d="M 482.1086 447.66895 L 539.93405 447.66895 C 542.1432 447.66895 543.93405 449.4598 543.93405 451.66895 L 543.93405 474.84943 C 543.93405 477.05857 542.1432 478.84943 539.93405 478.84943 L 482.1086 478.84943 C 479.89945 478.84943 478.1086 477.05857 478.1086 474.84943 L 478.1086 451.66895 C 478.1086 449.4598 479.89945 447.66895 482.1086 447.66895 Z" fill="#8eefc8" stroke="#3fb067" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+            </g>
+            <text transform="translate(562.79205 451.32049)" fill="#128d51" style="font-family:Open Sans;" class="label-large">
+                <tspan fill="#128d51" x="0" y="23" textLength="97.33594">Protocol</tspan>
+            </text>
+            <g id="anatomy-connections-domain-legend">
+                <path d="M 482.1086 493.89442 L 539.93405 493.89442 C 542.1432 493.89442 543.93405 495.68528 543.93405 497.89442 L 543.93405 521.0749 C 543.93405 523.28404 542.1432 525.0749 539.93405 525.0749 L 482.1086 525.0749 C 479.89945 525.0749 478.1086 523.28404 478.1086 521.0749 L 478.1086 497.89442 C 478.1086 495.68528 479.89945 493.89442 482.1086 493.89442 Z" fill="#81ebf1" stroke="#36a2ac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+            </g>
+            <text transform="translate(562.79205 496.90564)" fill="#118c96" style="font-family:Open Sans;" class="label-large">
+                <tspan fill="#118c96" x="0" y="23" textLength="88.00781">Domain</tspan>
+            </text>
+            <g id="anatomy-connections-external-legend">
+                <path d="M 482.1086 540.1199 L 539.93405 540.1199 C 542.1432 540.1199 543.93405 541.91076 543.93405 544.1199 L 543.93405 567.30038 C 543.93405 569.50952 542.1432 571.30038 539.93405 571.30038 L 482.1086 571.30038 C 479.89945 571.30038 478.1086 569.50952 478.1086 567.30038 L 478.1086 544.1199 C 478.1086 541.91076 479.89945 540.1199 482.1086 540.1199 Z" fill="#d282c6" stroke="#87447f" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+            </g>
+            <text transform="translate(562.79205 542.4908)" fill="#722166" style="font-family:Open Sans;" class="label-large">
+                <tspan fill="#722166" x="0" y="23" textLength="15.0078125">E</tspan>
+                <tspan fill="#722166" x="15.0078125" y="23" textLength="12.347656">x</tspan>
+                <tspan fill="#722166" x="27.355469" y="23" textLength="6.9921875">t</tspan>
+                <tspan fill="#722166" x="34.347656" y="23" textLength="12.347656">e</tspan>
+                <tspan fill="#722166" x="46.695312" y="23" textLength="8.3398438">r</tspan>
+                <tspan fill="#722166" x="55.035156" y="23" textLength="13.660156">n</tspan>
+                <tspan fill="#722166" x="68.695312" y="23" textLength="12.347656">a</tspan>
+                <tspan fill="#722166" x="81.04297" y="23" textLength="13.3359375">l </tspan>
+            </text>
+            <g id="anatomy-connections-persistence-legend">
+                <path d="M 482.1086 588.3362 L 539.9341 588.3362 C 542.14324 588.3362 543.9341 590.12705 543.9341 592.3362 L 543.9341 615.5167 C 543.9341 617.72583 542.14324 619.5167 539.9341 619.5167 L 482.1086 619.5167 C 479.89946 619.5167 478.1086 617.72583 478.1086 615.5167 L 478.1086 592.3362 C 478.1086 590.12705 479.89946 588.3362 482.1086 588.3362 Z" fill="#f893c1" stroke="#c23878" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+            </g>
+            <text transform="translate(258.50763 572.51352)" fill="#c2276c" style="font-family:Open Sans;" class="label-large">
+                <tspan fill="#c2276c" x="0" y="23" textLength="101.378906">External </tspan>
+                <tspan fill="#c2276c" x="0" y="52" textLength="117.375">Datastore </tspan>
+            </text>
+            <g id="anatomy-connections-external-service">
+                <path d="M 478.10857 328.72825 L 478.10857 148.637515 C 478.10857 146.428376 479.89943 144.637515 482.10857 144.637515 L 611.3257 144.637515 C 613.53484 144.637515 615.3257 146.428376 615.3257 148.637515 C 615.3257 148.637515 615.3257 148.637515 615.3257 148.637515 L 615.3257 328.72825 C 615.3257 330.9374 613.53484 332.72825 611.3257 332.72825 L 482.10857 332.72825 C 479.89943 332.72825 478.10857 330.9374 478.10857 328.72825 Z" fill="#d282c6" stroke="url(#anatomy-connections-blue-diagonal-stripes)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                <text transform="translate(517.71714 327.72825) rotate(-90)" fill="#722166" style="font-family:Open Sans;" class="label-large">
+                    <tspan fill="#722166" x="41.6899" y="23" textLength="101.378906">External </tspan>
+                    <tspan fill="#722166" x="46.342245" y="52" textLength="85.40625">Service</tspan>
+                </text>
+            </g>
+            <g id="anatomy-connections-external-datastore">
+                <path d="M 130.482925 644.31355 L 130.482925 566.71355 C 130.482925 561.35915 152.210925 557.01355 178.98293 557.01355 C 205.75493 557.01355 227.48293 561.35915 227.48293 566.71355 L 227.48293 644.31355 C 227.48293 649.66795 205.75493 654.01355 178.98293 654.01355 C 152.210925 654.01355 130.482925 649.66795 130.482925 644.31355" fill="#f2a8cd"></path>
+                <path d="M 130.482925 644.31355 L 130.482925 566.71355 C 130.482925 561.35915 152.210925 557.01355 178.98293 557.01355 C 205.75493 557.01355 227.48293 561.35915 227.48293 566.71355 L 227.48293 644.31355 C 227.48293 649.66795 205.75493 654.01355 178.98293 654.01355 C 152.210925 654.01355 130.482925 649.66795 130.482925 644.31355 M 130.482925 566.71355 C 130.482925 572.06795 152.210925 576.41355 178.98293 576.41355 C 205.75493 576.41355 227.48293 572.06795 227.48293 566.71355" stroke="url(#anatomy-connections-purple-diagonal-stripes)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+            </g>
+            <text transform="translate(562.79205 590.06675)" fill="#c2276c" style="font-family:Open Sans;" class="label-large">
+                <tspan fill="#c2276c" x="0" y="23" textLength="134.75391">Persistence</tspan>
+            </text>
+            <text transform="translate(562.79205 639.63353)" fill="#722166" style="font-family:Open Sans;" class="label-large">
+                <tspan fill="#722166" x="0" y="23" textLength="131.98828">Connection</tspan>
+            </text>
+            <line x1="97.544434" y1="124.58197" x2="97.54956" y2="357.25956" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="130.07248" y1="124.58197" x2="130.05908" y2="237.41485" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="257.51092" y1="212.63751" x2="257.51401" y2="357.25956" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="209.01943" y1="124.58197" x2="209" y2="144.637515" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="178.99751" y1="215.63751" x2="178.98292" y2="237.41485" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="271.5" y1="178.63751" x2="294.53645" y2="178.45605" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="319.51465" y1="124.58197" x2="319.50764" y2="144.637515" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="247.38882" y1="11.25" x2="247.38882" y2="72.12375" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="344.47884" y1="238.68288" x2="359.8977" y2="238.68288" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="409.84009" y1="238.68288" x2="478.10857" y2="238.68288" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="247.38882" y1="409.71778" x2="247.38882" y2="434.2547" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="179.03246" y1="486.71292" x2="178.98293" y2="557.01355" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <line x1="543.9341" y1="654.13353" x2="478.1086" y2="654.13353" stroke="#722166" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line>
+            <path d="M 479.5 405.2854 L 541.3255 405.2854 C 542.43007 405.2854 543.3255 406.18084 543.3255 407.2854 L 543.3255 434.4659 C 543.3255 435.57048 542.43007 436.4659 541.3255 436.4659 L 479.5 436.4659 C 478.39543 436.4659 477.5 435.57048 477.5 434.4659 L 477.5 407.2854 C 477.5 406.18084 478.39543 405.2854 479.5 405.2854 Z" stroke="#7b7b7b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke-dasharray="16,8,2,8"></path>
+            <text transform="translate(562.79205 405.73533)" fill="#7b7b7b" style="font-family:Open Sans;" class="label-large">
+                <tspan fill="#7b7b7b" x="0" y="23" textLength="202.6875">Logical Boundary</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
