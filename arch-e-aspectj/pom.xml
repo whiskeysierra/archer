@@ -32,6 +32,30 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>aspectj-maven-plugin</artifactId>
+                <version>1.8</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <complianceLevel>${java.version}</complianceLevel>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjtools</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
@@ -50,6 +74,12 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectj.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
