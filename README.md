@@ -14,6 +14,10 @@
 </dependency>
 ```
 
+## Access Policy
+
+![Access policy diagram](https://docs.google.com/drawings/d/1bGUg6tv4zDea3-akWn33ky5NoAOf4988peUxEZGYKd8/pub?w=888&h=772)
+
 ## License
 
 Copyright [2015] Willi Schönborn
