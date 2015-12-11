@@ -2,7 +2,7 @@ package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​
- * Arch-E: Annotations
+ * Arch-E: AspectJ
  * ⁣⁣
  * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
@@ -20,17 +20,15 @@ package io.github.whiskeysierra.arche;
  * ​⁣
  */
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.DeclareError;
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.ANNOTATION_TYPE, ElementType.TYPE})
-@Documented
-@Inherited
-@Layer
-public @interface Protocol {
+@Aspect
+public final class LayerPolicy {
+
+    // TODO right now we only support two levels of meta annotations
+    @DeclareError("within(!@(@io.github.whiskeysierra.arche.Layer *) *) && " +
+            "within(!@(@(@io.github.whiskeysierra.arche.Layer *) *) *)")
+    public static final String missingLayerAnnotation = "must be part of a layer";
+
 }

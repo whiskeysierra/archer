@@ -1,4 +1,4 @@
-package org.example;
+package org.example.resource;
 
 /*
  * ⁣​
@@ -20,11 +20,8 @@ package org.example;
  * ​⁣
  */
 
-import io.github.whiskeysierra.arche.Persistence;
+import io.github.whiskeysierra.arche.Protocol;
 
-@Persistence
-public class PersonRepository {
-
-
-
+@Protocol
+public class PersonResource {
 }

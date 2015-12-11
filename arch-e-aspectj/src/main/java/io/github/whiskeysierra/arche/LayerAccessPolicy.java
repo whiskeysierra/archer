@@ -1,4 +1,4 @@
-package org.example;
+package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​
@@ -20,8 +20,10 @@ package org.example;
  * ​⁣
  */
 
-import io.github.whiskeysierra.arche.Domain;
+import org.aspectj.lang.annotation.Aspect;
 
-@Domain
-public class Person {
+@Aspect
+public final class LayerAccessPolicy {
+
+
 }

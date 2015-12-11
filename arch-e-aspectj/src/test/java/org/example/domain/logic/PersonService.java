@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.arche;
+package org.example.domain.logic;
 
 /*
  * ⁣​
@@ -20,10 +20,8 @@ package io.github.whiskeysierra.arche;
  * ​⁣
  */
 
-import org.aspectj.lang.annotation.Aspect;
+import io.github.whiskeysierra.arche.Logic;
 
-@Aspect
-public final class LayerAccessAspect {
-
-
+@Logic
+public class PersonService {
 }

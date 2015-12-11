@@ -28,9 +28,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.ANNOTATION_TYPE, ElementType.TYPE})
+@Target(ElementType.TYPE)
 @Documented
 @Inherited
-@Layer
-public @interface Protocol {
+@Domain
+public @interface Logic {
 }

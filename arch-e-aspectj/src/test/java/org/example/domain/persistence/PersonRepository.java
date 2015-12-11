@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.arche;
+package org.example.domain.persistence;
 
 /*
  * ⁣​
@@ -20,13 +20,11 @@ package io.github.whiskeysierra.arche;
  * ​⁣
  */
 
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.DeclareError;
+import io.github.whiskeysierra.arche.Persistence;
 
-@Aspect
-public final class LayerDeclarationAspect {
+@Persistence
+public class PersonRepository {
 
-    @DeclareError("within(!@(@io.github.whiskeysierra.arche.Layer *) *)")
-    public static final String missingLayerAnnotation = "Not part of a layer";
+
 
 }

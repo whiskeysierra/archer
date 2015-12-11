@@ -31,6 +31,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Documented
 @Inherited
-@Layer
+@Domain
 public @interface Persistence {
 }

@@ -1,8 +1,8 @@
-package io.github.whiskeysierra.arche;
+package org.example.gateway;
 
 /*
  * ⁣​
- * Arch-E: Annotations
+ * Arch-E: AspectJ
  * ⁣⁣
  * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
@@ -20,17 +20,8 @@ package io.github.whiskeysierra.arche;
  * ​⁣
  */
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import io.github.whiskeysierra.arche.External;
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.ANNOTATION_TYPE, ElementType.TYPE})
-@Documented
-@Inherited
-@Layer
-public @interface Protocol {
+@External
+public class EmailGateway {
 }
