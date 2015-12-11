@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.architecture;
+package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​
@@ -31,9 +31,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Documented
-@Profile(Production.PROFILE)
-public @interface Production {
+@Profile(Staging.PROFILE)
+public @interface Staging {
 
-    String PROFILE = "production";
+    String PROFILE = "staging";
 
 }

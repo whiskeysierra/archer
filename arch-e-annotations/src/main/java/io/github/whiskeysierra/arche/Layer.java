@@ -1,8 +1,8 @@
-package io.github.whiskeysierra.architecture;
+package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​
- * Arch-E: Spring
+ * Arch-E: Annotations
  * ⁣⁣
  * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
@@ -20,10 +20,6 @@ package io.github.whiskeysierra.architecture;
  * ​⁣
  */
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScan.Filter;
-import org.springframework.core.annotation.AliasFor;
-
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -31,12 +27,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
+@Target(ElementType.ANNOTATION_TYPE)
 @Documented
-@ComponentScan(useDefaultFilters = false)
-public @interface SelectiveScan {
-
-    @AliasFor(annotation = ComponentScan.class, attribute = "includeFilters")
-    Filter[] value() default {};
-
+public @interface Layer {
 }

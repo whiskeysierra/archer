@@ -1,8 +1,8 @@
-package io.github.whiskeysierra.architecture;
+package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​
- * Arch-E: Spring
+ * Arch-E: Annotations
  * ⁣⁣
  * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
@@ -20,20 +20,17 @@ package io.github.whiskeysierra.architecture;
  * ​⁣
  */
 
-import org.springframework.context.annotation.Profile;
-
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.METHOD})
+@Target(ElementType.TYPE)
 @Documented
-@Profile(Staging.PROFILE)
-public @interface Staging {
-
-    String PROFILE = "staging";
-
+@Inherited
+@Layer
+public @interface Persistence {
 }

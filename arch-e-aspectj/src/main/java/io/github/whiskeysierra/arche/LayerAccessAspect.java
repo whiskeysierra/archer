@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.architecture;
+package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​
@@ -21,12 +21,9 @@ package io.github.whiskeysierra.architecture;
  */
 
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.DeclareError;
 
 @Aspect
-public class LayerAspect {
+public final class LayerAccessAspect {
 
-    @DeclareError("within(!@(@io.github.whiskeysierra.architecture.Layer *) *)")
-    static final String missingLayerAnnotation = "Not part of a layer";
 
 }

@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.architecture;
+package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​

@@ -1,8 +1,8 @@
-package io.github.whiskeysierra.architecture;
+package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​
- * Arch-E: Annotations
+ * Arch-E: AspectJ
  * ⁣⁣
  * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
@@ -20,17 +20,13 @@ package io.github.whiskeysierra.architecture;
  * ​⁣
  */
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.DeclareError;
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-@Documented
-@Inherited
-@Layer
-public @interface External {
+@Aspect
+public final class LayerDeclarationAspect {
+
+    @DeclareError("within(!@(@io.github.whiskeysierra.arche.Layer *) *)")
+    public static final String missingLayerAnnotation = "Not part of a layer";
+
 }

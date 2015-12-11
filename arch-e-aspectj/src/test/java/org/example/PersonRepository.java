@@ -20,7 +20,7 @@ package org.example;
  * ​⁣
  */
 
-import io.github.whiskeysierra.architecture.Persistence;
+import io.github.whiskeysierra.arche.Persistence;
 
 @Persistence
 public class PersonRepository {

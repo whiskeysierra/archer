@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.architecture;
+package io.github.whiskeysierra.arche;
 
 /*
  * ⁣​
@@ -32,5 +32,5 @@ import java.lang.annotation.Target;
 @Documented
 @Inherited
 @Layer
-public @interface Persistence {
+public @interface Protocol {
 }

@@ -20,7 +20,7 @@ package org.example;
  * ​⁣
  */
 
-import io.github.whiskeysierra.architecture.Domain;
+import io.github.whiskeysierra.arche.Domain;
 
 @Domain
 public class Person {
