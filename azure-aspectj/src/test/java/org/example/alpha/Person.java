@@ -1,4 +1,4 @@
-package org.example.domain.persistence;
+package org.example.alpha;
 
 /*
  * ⁣​
@@ -20,11 +20,6 @@ package org.example.domain.persistence;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Persistence;
-
-@Persistence
-public class PersonRepository {
-
-
+public class Person {
 
 }

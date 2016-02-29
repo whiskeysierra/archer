@@ -33,4 +33,5 @@ import java.lang.annotation.Target;
 @Inherited
 @Layer
 public @interface Protocol {
+
 }
