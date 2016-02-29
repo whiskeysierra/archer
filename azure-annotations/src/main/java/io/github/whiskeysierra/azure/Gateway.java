@@ -32,5 +32,5 @@ import java.lang.annotation.Target;
 @Documented
 @Inherited
 @External
-public @interface Persistence {
+public @interface Gateway {
 }
