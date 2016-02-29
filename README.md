@@ -1,16 +1,16 @@
-# Arch-E
+# Azure
 
-[![Blueprint](docs/blueprint.jpg)](https://pixabay.com/en/blueprint-ruler-architecture-964629/) 
+[![Blueprint](docs/blueprint.jpg)](https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_station_blueprints.jpg) 
 
-*Arch-E* is an *architectural enforcement framework* for Java. 
+*Azure* is an *architectural enforcement framework* for Java. 
 
 ## Dependency
 
 ```xml
 <dependency>
   <groupId>io.github.whiskeysierra</groupId>
-  <artifactId>arch-e</artifactId>
-  <version>${arch-e.version}</version>
+  <artifactId>azure</artifactId>
+  <version>${azure.version}</version>
 </dependency>
 ```
 
