@@ -20,73 +20,39 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
-import org.aspectj.tools.ajc.Main;
+import org.example.alpha.Alpha;
+import org.example.alpha.AlphaGateway;
+import org.example.alpha.AlphaRepository;
+import org.example.alpha.AlphaResource;
+import org.example.alpha.AlphaService;
+import org.example.beta.Beta;
+import org.junit.Rule;
 import org.junit.Test;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-
-import static io.github.whiskeysierra.azure.Result.ERROR;
-import static org.hamcrest.Matchers.is;
+import static io.github.whiskeysierra.azure.CompilerMatchers.hasCompilerError;
+import static io.github.whiskeysierra.azure.CompilerMatchers.hasNoCompilerErrors;
+import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertThat;
 
-public class LayerPolicyTest {
+public final class LayerPolicyTest {
+
+    @Rule
+    public final Compiler compiler = new Compiler();
 
     @Test
-    public void shouldFail() {
-        final Result result = compile(new File("src/test/java/org/example/alpha/Person.java"),
-                new File("src/main/java/io/github/whiskeysierra/azure/LayerPolicy.java"));
-
-        assertThat(result, is(ERROR));
-    }
-
-    private Result compile(final File javaFileName, final File aspectFile) {
-
-        // TODO assertExists(javaFileName);
-        // TODO assertExists(aspectFile);
-
-        List<String> argList = new ArrayList<>();
-
-        // java 7 compatibility
-        argList.add("-source");
-        argList.add("1.8");
-        argList.add("-target");
-        argList.add("1.8");
-
-        // set class path
-        argList.add("-cp");
-        argList.add(System.getProperty("java.class.path"));
+    public void shouldCompile() {
+        final Compilation compilation = compiler.compile(Alpha.class, AlphaGateway.class,
+                AlphaRepository.class, AlphaResource.class, AlphaService.class);
         
-        argList.add("-d");
-        argList.add("/tmp");
+        assertThat(compilation, hasNoCompilerErrors());
+    }
+    
+    @Test
+    public void shouldFail() {
+        final Compilation compilation = compiler.compile(Beta.class);
 
-        // add java file
-        argList.add(javaFileName.getAbsolutePath());
-
-        // add aspect files
-        argList.add(aspectFile.getAbsolutePath());
-//        for (File additionalAspectFile : requiredAspects) {
-//            assertExists(additionalAspectFile);
-//            argList.add(additionalAspectFile.getAbsolutePath());
-//        }
-
-        String[] args = argList.toArray(new String[argList.size()]);
-        List<String> fails = new ArrayList<>();
-        List<String> errors = new ArrayList<>();
-        List<String> warnings = new ArrayList<>();
-        List<String> infos = new ArrayList<>();
-
-        // org.aspectj.tools.ajc.Main;
-        Main.bareMain(args, false, fails, errors, warnings, infos);
-
-        if (!fails.isEmpty() || !errors.isEmpty()) {
-            return ERROR;
-        } else if (!warnings.isEmpty()) {
-            return Result.WARNING;
-        } else {
-            return Result.SUCCESS;
-        }
+        assertThat(compilation, hasCompilerError(Beta.class,
+                containsString("must be part of a layer")));
     }
 
 }

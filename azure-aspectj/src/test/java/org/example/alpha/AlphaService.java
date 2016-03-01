@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.azure;
+package org.example.alpha;
 
 /*
  * ⁣​
@@ -20,8 +20,10 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
-enum Result {
-    ERROR,
-    WARNING,
-    SUCCESS
+import io.github.whiskeysierra.azure.Logic;
+
+@Logic
+public class AlphaService {
+
+
 }
