@@ -20,9 +20,9 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Persistence;
+import io.github.whiskeysierra.azure.External;
 
-@Persistence
+@External
 public class AlphaRepository {
 
 

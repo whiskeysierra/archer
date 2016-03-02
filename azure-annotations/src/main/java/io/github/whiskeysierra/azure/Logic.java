@@ -31,6 +31,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Documented
 @Inherited
-@Domain
+@Layer
 public @interface Logic {
+
 }

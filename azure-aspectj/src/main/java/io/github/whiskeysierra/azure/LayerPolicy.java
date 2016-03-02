@@ -26,9 +26,7 @@ import org.aspectj.lang.annotation.DeclareError;
 @Aspect
 public final class LayerPolicy {
 
-    // TODO right now we only support two levels of meta annotations
-    @DeclareError("staticinitialization(!@(@io.github.whiskeysierra.azure.Layer *) *) && " +
-            "staticinitialization(!@(@(@io.github.whiskeysierra.azure.Layer *) *) *)")
+    @DeclareError("staticinitialization(!@(@io.github.whiskeysierra.azure.Layer *) *)")
     public static final String missingLayerAnnotation = "must be part of a layer";
 
 }

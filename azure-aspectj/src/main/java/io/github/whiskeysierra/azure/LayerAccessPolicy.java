@@ -25,5 +25,4 @@ import org.aspectj.lang.annotation.Aspect;
 @Aspect
 public final class LayerAccessPolicy {
 
-
 }

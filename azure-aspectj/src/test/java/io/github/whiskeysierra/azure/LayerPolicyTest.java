@@ -25,12 +25,12 @@ import org.example.alpha.AlphaGateway;
 import org.example.alpha.AlphaRepository;
 import org.example.alpha.AlphaResource;
 import org.example.alpha.AlphaService;
-import org.example.beta.Beta;
+import org.example.bravo.Bravo;
 import org.junit.Rule;
 import org.junit.Test;
 
-import static io.github.whiskeysierra.azure.CompilerMatchers.hasCompilerError;
-import static io.github.whiskeysierra.azure.CompilerMatchers.hasNoCompilerErrors;
+import static io.github.whiskeysierra.azure.CompilerMatchers.hasError;
+import static io.github.whiskeysierra.azure.CompilerMatchers.hasNoErrors;
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertThat;
 
@@ -44,15 +44,16 @@ public final class LayerPolicyTest {
         final Compilation compilation = compiler.compile(Alpha.class, AlphaGateway.class,
                 AlphaRepository.class, AlphaResource.class, AlphaService.class);
         
-        assertThat(compilation, hasNoCompilerErrors());
+        assertThat(compilation, hasNoErrors());
     }
     
     @Test
     public void shouldFail() {
-        final Compilation compilation = compiler.compile(Beta.class);
+        final Compilation compilation = compiler.compile(Bravo.class);
 
-        assertThat(compilation, hasCompilerError(Beta.class,
+        assertThat(compilation, hasError(Bravo.class,
                 containsString("must be part of a layer")));
     }
+    
 
 }

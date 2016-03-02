@@ -33,11 +33,11 @@ import static org.hobsoft.hamcrest.compose.ComposeMatchers.hasFeature;
 
 public final class CompilerMatchers {
 
-    public static Matcher<? super Collection<IMessage>> hasNoCompilerErrors() {
+    public static Matcher<? super Collection<IMessage>> hasNoErrors() {
         return empty();
     }
 
-    public static Matcher<? super Collection<IMessage>> hasCompilerError(final Class<?> target,
+    public static Matcher<? super Collection<IMessage>> hasError(final Class<?> target,
             final Matcher<String> messageMatcher) {
         return hasItem(compose(hasFile(target)).and(hasMessage(messageMatcher)));
     }
