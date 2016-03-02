@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example.bravo;
 
 /*
  * ⁣​
@@ -20,10 +20,13 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Model;
+import io.github.whiskeysierra.azure.Scheduler;
 
-@Model
-public class Alpha {
+@Scheduler
+public class BravoScheduler {
 
+    public void perform() {
+
+    }
 
 }

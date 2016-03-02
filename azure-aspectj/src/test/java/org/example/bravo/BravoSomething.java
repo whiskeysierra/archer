@@ -1,10 +1,10 @@
-package org.example.charlie;
+package org.example.bravo;
 
 /*
  * ⁣​
  * Azure: AspectJ
  * ⁣⁣
- * Copyright (C) 2015 - 2016 whiskeysierra
+ * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,13 +20,6 @@ package org.example.charlie;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Gateway;
-
-@Gateway
-public class CharlieGateway {
-
-    public void bar() {
-
-    }
+public class BravoSomething {
 
 }

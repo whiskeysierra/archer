@@ -38,7 +38,19 @@ public final class LayerPolicy {
     @DeclareError("within(@Logic *) && call(* (@(@Layer *) !@(Gateway || Model || Persistence) *).*(..))")
     public static final String LOGIC = "may only call @Gateway, @Model and @Persistence";
     
+    @DeclareError("within(@Model *) && call(* (@(@Layer *) !@Library *).*(..))")
+    public static final String MODEL = "may only call @Library";
+    
     @DeclareError("within(@Persistence *) && call(* (@(@Layer *) !@(Library || Model) *).*(..))")
     public static final String PERSISTENCE = "may only call @Library and @Model";
+    
+    @DeclareError("within(@Queue *) && call(* (@(@Layer *) !@(Library || Logic || Model) *).*(..))")
+    public static final String QUEUE = "may only call @Library, @Logic and @Model";
+
+    @DeclareError("within(@Resource *) && call(* (@(@Layer *) !@(Gateway || Library || Logic || Model || Persistence) *).*(..))")
+    public static final String RESOURCE = "may only call @Gateway, @Library, @Logic, @Model and @Persistence";
+    
+    @DeclareError("within(@Scheduler *) && call(* (@(@Layer *) !@(Library || Logic || Model) *).*(..))")
+    public static final String SCHEDULER = "may only call @Library, @Logic and @Model";
 
 }

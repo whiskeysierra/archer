@@ -20,14 +20,23 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
-import org.example.alpha.Alpha;
+import org.example.alpha.AlphaLibrary;
+import org.example.alpha.AlphaModel;
 import org.example.alpha.AlphaGateway;
+import org.example.alpha.AlphaQueue;
 import org.example.alpha.AlphaRepository;
 import org.example.alpha.AlphaResource;
+import org.example.alpha.AlphaScheduler;
 import org.example.alpha.AlphaService;
-import org.example.bravo.Bravo;
-import org.example.charlie.CharlieRepository;
-import org.example.charlie.CharlieService;
+import org.example.bravo.BravoGateway;
+import org.example.bravo.BravoLibrary;
+import org.example.bravo.BravoModel;
+import org.example.bravo.BravoQueue;
+import org.example.bravo.BravoResource;
+import org.example.bravo.BravoScheduler;
+import org.example.bravo.BravoSomething;
+import org.example.bravo.BravoRepository;
+import org.example.bravo.BravoService;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -43,26 +52,27 @@ public final class LayerPolicyTest {
 
     @Test
     public void shouldCompile() {
-        final Compilation compilation = compiler.compile(Alpha.class, AlphaGateway.class,
-                AlphaRepository.class, AlphaResource.class, AlphaService.class);
+        final Compilation compilation = compiler.compile(AlphaGateway.class, AlphaLibrary.class, AlphaModel.class,
+                AlphaQueue.class, AlphaRepository.class, AlphaResource.class, AlphaScheduler.class, AlphaService.class);
         
         assertThat(compilation, hasNoErrors());
     }
     
     @Test
-    public void shouldFailOnMissingLayerAnnotation() {
-        final Compilation compilation = compiler.compile(Bravo.class);
+    public void shouldNotCompile() {
+        final Compilation compilation = compiler.compile(BravoGateway.class, BravoLibrary.class, BravoModel.class,
+                BravoQueue.class, BravoRepository.class, BravoResource.class, BravoScheduler.class, BravoService.class,
+                BravoSomething.class);
 
-        assertThat(compilation, hasError(Bravo.class,
+        assertThat(compilation, hasError(BravoSomething.class,
                 containsString("must be part of a layer")));
-    }
-    
-    @Test
-    public void shouldFailOnRepositoryCallingLogic() {
-        final Compilation compilation = compiler.compile(CharlieRepository.class, CharlieService.class);
         
-        assertThat(compilation, hasError(CharlieRepository.class,
+        
+        
+        assertThat(compilation, hasError(BravoRepository.class,
                 containsString("may only call @Library and @Model")));
+        
+        
     }
 
 }

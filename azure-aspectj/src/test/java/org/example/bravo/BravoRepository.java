@@ -1,10 +1,10 @@
-package org.example.charlie;
+package org.example.bravo;
 
 /*
  * ⁣​
  * Azure: AspectJ
  * ⁣⁣
- * Copyright (C) 2015 - 2016 whiskeysierra
+ * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,13 +20,19 @@ package org.example.charlie;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Logic;
+import io.github.whiskeysierra.azure.Persistence;
 
-@Logic
-public class CharlieService {
+@Persistence
+public class BravoRepository {
 
-    public void bar() {
+    private final BravoService service;
 
+    public BravoRepository(BravoService service) {
+        this.service = service;
+    }
+    
+    public void perform() {
+        service.perform();
     }
 
 }

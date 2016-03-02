@@ -1,4 +1,4 @@
-package org.example.charlie;
+package org.example.bravo;
 
 /*
  * ⁣​
@@ -20,12 +20,12 @@ package org.example.charlie;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Resource;
+import io.github.whiskeysierra.azure.Logic;
 
-@Resource
-public class CharlieResource {
+@Logic
+public class BravoService {
 
-    public void bar() {
+    public void perform() {
 
     }
 
