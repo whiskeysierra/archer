@@ -26,6 +26,8 @@ import org.example.alpha.AlphaRepository;
 import org.example.alpha.AlphaResource;
 import org.example.alpha.AlphaService;
 import org.example.bravo.Bravo;
+import org.example.charlie.CharlieRepository;
+import org.example.charlie.CharlieService;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -48,12 +50,19 @@ public final class LayerPolicyTest {
     }
     
     @Test
-    public void shouldFail() {
+    public void shouldFailOnMissingLayerAnnotation() {
         final Compilation compilation = compiler.compile(Bravo.class);
 
         assertThat(compilation, hasError(Bravo.class,
                 containsString("must be part of a layer")));
     }
     
+    @Test
+    public void shouldFailOnRepositoryCallingLogic() {
+        final Compilation compilation = compiler.compile(CharlieRepository.class, CharlieService.class);
+        
+        assertThat(compilation, hasError(CharlieRepository.class,
+                containsString("may only call @Library and @Model")));
+    }
 
 }

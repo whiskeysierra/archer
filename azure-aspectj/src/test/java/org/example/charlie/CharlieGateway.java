@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example.charlie;
 
 /*
  * ⁣​
@@ -20,13 +20,13 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Persistence;
+import io.github.whiskeysierra.azure.Gateway;
 
-@Persistence
-public class AlphaRepository {
+@Gateway
+public class CharlieGateway {
 
-    public void perform() {
-        
+    public void bar() {
+
     }
 
 }

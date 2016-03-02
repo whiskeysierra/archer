@@ -1,10 +1,10 @@
-package org.example.alpha;
+package io.github.whiskeysierra.azure;
 
 /*
  * ⁣​
- * Azure: AspectJ
+ * Azure: Annotations
  * ⁣⁣
- * Copyright (C) 2015 - 2016 whiskeysierra
+ * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,13 +20,18 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Persistence;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-@Persistence
-public class AlphaRepository {
-
-    public void perform() {
-        
-    }
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.ANNOTATION_TYPE, ElementType.TYPE})
+@Documented
+@Inherited
+@Layer
+public @interface Gateway {
 
 }

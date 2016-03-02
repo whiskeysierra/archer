@@ -32,6 +32,6 @@ import java.lang.annotation.Target;
 @Documented
 @Inherited
 @Layer
-public @interface External {
+public @interface Scheduler {
 
 }

@@ -20,13 +20,19 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Persistence;
+import io.github.whiskeysierra.azure.Queue;
 
-@Persistence
-public class AlphaRepository {
+@Queue
+public class AlphaQueue {
+    
+    private final AlphaService service;
 
-    public void perform() {
-        
+    public AlphaQueue(AlphaService service) {
+        this.service = service;
     }
-
+    
+    public void perform() {
+        service.perform();
+    }
+    
 }

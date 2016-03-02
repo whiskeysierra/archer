@@ -2,7 +2,7 @@ package io.github.whiskeysierra.azure;
 
 /*
  * ⁣​
- * Azure: AspectJ
+ * Azure: Annotations
  * ⁣⁣
  * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
@@ -20,9 +20,18 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
-import org.aspectj.lang.annotation.Aspect;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-@Aspect
-public final class LayerAccessPolicy {
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.ANNOTATION_TYPE, ElementType.TYPE})
+@Documented
+@Inherited
+@Layer
+public @interface Queue {
 
 }

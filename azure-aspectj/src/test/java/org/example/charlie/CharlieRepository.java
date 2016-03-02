@@ -1,10 +1,10 @@
-package org.example.alpha;
+package org.example.charlie;
 
 /*
  * ⁣​
  * Azure: AspectJ
  * ⁣⁣
- * Copyright (C) 2015 - 2016 whiskeysierra
+ * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,10 +23,16 @@ package org.example.alpha;
 import io.github.whiskeysierra.azure.Persistence;
 
 @Persistence
-public class AlphaRepository {
+public class CharlieRepository {
 
-    public void perform() {
-        
+    private final CharlieService service;
+
+    public CharlieRepository(CharlieService service) {
+        this.service = service;
     }
-
+    
+    public void foo() {
+        service.bar();
+    }
+    
 }

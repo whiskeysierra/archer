@@ -1,10 +1,10 @@
-package io.github.whiskeysierra.azure;
+package org.example.charlie;
 
 /*
  * ⁣​
- * Azure: Annotations
+ * Azure: AspectJ
  * ⁣⁣
- * Copyright (C) 2015 whiskeysierra
+ * Copyright (C) 2015 - 2016 whiskeysierra
  * ⁣⁣
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,18 +20,13 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import io.github.whiskeysierra.azure.Logic;
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.ANNOTATION_TYPE, ElementType.TYPE})
-@Documented
-@Inherited
-@Layer
-public @interface Protocol {
+@Logic
+public class CharlieService {
+
+    public void bar() {
+
+    }
 
 }

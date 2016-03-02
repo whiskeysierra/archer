@@ -20,10 +20,13 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.External;
+import io.github.whiskeysierra.azure.Gateway;
 
-@External
+@Gateway
 public class AlphaGateway {
 
+    public void perform() {
+        
+    }
 
 }

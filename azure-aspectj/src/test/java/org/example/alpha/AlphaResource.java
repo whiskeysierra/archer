@@ -20,10 +20,22 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Protocol;
+import io.github.whiskeysierra.azure.Resource;
 
-@Protocol
+@Resource
 public class AlphaResource {
 
+    private final AlphaService service;
+    private final AlphaRepository repository;
+
+    public AlphaResource(AlphaService service, AlphaRepository repository) {
+        this.service = service;
+        this.repository = repository;
+    }
+
+    public void perform() {
+        service.perform();
+        repository.perform();
+    }
 
 }

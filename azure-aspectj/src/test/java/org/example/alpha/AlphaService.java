@@ -25,5 +25,8 @@ import io.github.whiskeysierra.azure.Logic;
 @Logic
 public class AlphaService {
 
+    public void perform() {
+
+    }
 
 }

@@ -1,8 +1,8 @@
-package org.example.charlie;
+package io.github.whiskeysierra.azure;
 
 /*
  * ⁣​
- * Azure: AspectJ
+ * Azure: Annotations
  * ⁣⁣
  * Copyright (C) 2015 whiskeysierra
  * ⁣⁣
@@ -20,6 +20,18 @@ package org.example.charlie;
  * ​⁣
  */
 
-public class Charlie {
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.ANNOTATION_TYPE, ElementType.TYPE})
+@Documented
+@Inherited
+@Layer
+public @interface Persistence {
 
 }

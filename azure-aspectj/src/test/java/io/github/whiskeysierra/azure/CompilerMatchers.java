@@ -23,11 +23,13 @@ package io.github.whiskeysierra.azure;
 import org.aspectj.bridge.IMessage;
 import org.hamcrest.Matcher;
 
+import java.util.Arrays;
 import java.util.Collection;
 
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.endsWith;
 import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.hasItems;
 import static org.hobsoft.hamcrest.compose.ComposeMatchers.compose;
 import static org.hobsoft.hamcrest.compose.ComposeMatchers.hasFeature;
 
@@ -43,8 +45,8 @@ public final class CompilerMatchers {
     }
 
     private static Matcher<IMessage> hasFile(final Class<?> target) {
-        return hasFeature("location", (IMessage m) -> 
-                m.getSourceLocation().getSourceFile().getAbsolutePath(),
+        return hasFeature("location", (IMessage m) ->
+                        m.getSourceLocation().getSourceFile().getAbsolutePath(),
                 endsWith(target.getName().replace('.', '/') + ".java"));
     }
 

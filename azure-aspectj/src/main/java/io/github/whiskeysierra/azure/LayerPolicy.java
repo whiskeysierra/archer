@@ -27,6 +27,18 @@ import org.aspectj.lang.annotation.DeclareError;
 public final class LayerPolicy {
 
     @DeclareError("staticinitialization(!@(@io.github.whiskeysierra.azure.Layer *) *)")
-    public static final String missingLayerAnnotation = "must be part of a layer";
+    public static final String LAYER = "must be part of a layer";
+
+    @DeclareError("within(@Gateway *) && call(* (@(@Layer *) !@(Library || Model) *).*(..))")
+    public static final String GATEWAY = "may only call @Library and @Model";
+    
+    @DeclareError("within(@Library *) && call(* (@(@Layer *) !@Model *).*(..))")
+    public static final String LIBRARY = "may only call @Model";
+    
+    @DeclareError("within(@Logic *) && call(* (@(@Layer *) !@(Gateway || Model || Persistence) *).*(..))")
+    public static final String LOGIC = "may only call @Gateway, @Model and @Persistence";
+    
+    @DeclareError("within(@Persistence *) && call(* (@(@Layer *) !@(Library || Model) *).*(..))")
+    public static final String PERSISTENCE = "may only call @Library and @Model";
 
 }
