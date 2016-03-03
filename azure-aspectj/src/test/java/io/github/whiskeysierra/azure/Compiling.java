@@ -30,7 +30,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.google.common.collect.Iterables.toArray;
-import static io.github.whiskeysierra.azure.Compiling.compile;
 import static io.github.whiskeysierra.azure.CompilerMatchers.hasError;
 import static io.github.whiskeysierra.azure.CompilerMatchers.hasNoErrors;
 import static java.lang.String.format;
@@ -41,7 +40,7 @@ import static org.junit.Assert.assertThat;
 
 public interface Compiling {
 
-    static List<IMessage> compile(final Class<?>... classes) throws IOException {
+    default List<IMessage> compile(final Class<?>... classes) throws IOException {
         final TemporaryFolder temporaryFolder = new TemporaryFolder();
         temporaryFolder.create();
 
