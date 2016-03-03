@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example.library;
 
 /*
  * ⁣​
@@ -20,13 +20,16 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Logic;
+import io.github.whiskeysierra.azure.Library;
+import org.example.SomeGateway;
 
-@Logic
-public class AlphaService {
+@Library
+public final class GatewayCallingLibrary {
 
-    public void perform() {
-
+    private SomeGateway gateway;
+    
+    public void send() {
+        gateway.send();
     }
 
 }

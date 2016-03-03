@@ -1,4 +1,4 @@
-package org.example.bravo;
+package org.example.gateway;
 
 /*
  * ⁣​
@@ -20,13 +20,16 @@ package org.example.bravo;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Resource;
+import io.github.whiskeysierra.azure.Gateway;
+import org.example.SomePersistence;
 
-@Resource
-public class BravoResource {
+@Gateway
+public final class PersistenceCallingGateway {
 
-    public void perform() {
-        
+    private SomePersistence persistence;
+
+    public void send() {
+        persistence.persist();
     }
-
+    
 }

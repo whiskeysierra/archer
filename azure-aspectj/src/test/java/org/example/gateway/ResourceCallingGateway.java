@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example.gateway;
 
 /*
  * ⁣​
@@ -21,12 +21,15 @@ package org.example.alpha;
  */
 
 import io.github.whiskeysierra.azure.Gateway;
+import org.example.SomeResource;
 
 @Gateway
-public class AlphaGateway {
+public final class ResourceCallingGateway {
 
-    public void perform() {
-        
+    private SomeResource resource;
+    
+    public void send() {
+        resource.receive();
     }
 
 }

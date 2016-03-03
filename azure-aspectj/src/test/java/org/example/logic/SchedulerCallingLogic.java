@@ -1,4 +1,4 @@
-package org.example.bravo;
+package org.example.logic;
 
 /*
  * ⁣​
@@ -21,12 +21,15 @@ package org.example.bravo;
  */
 
 import io.github.whiskeysierra.azure.Logic;
+import org.example.SomeScheduler;
 
 @Logic
-public class BravoService {
+public final class SchedulerCallingLogic {
 
-    public void perform() {
-
+    private SomeScheduler scheduler;
+    
+    public void send() {
+        scheduler.trigger();
     }
 
 }

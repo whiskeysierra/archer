@@ -25,6 +25,7 @@ import org.hamcrest.Matcher;
 
 import java.util.Collection;
 
+import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.endsWith;
 import static org.hamcrest.Matchers.hasItem;
@@ -39,7 +40,7 @@ public final class CompilerMatchers {
 
     public static Matcher<? super Collection<IMessage>> hasError(final Class<?> target,
             final Matcher<String> messageMatcher) {
-        return hasItem(compose(hasFile(target)).and(hasMessage(messageMatcher)));
+        return contains(compose(hasFile(target)).and(hasMessage(messageMatcher)));
     }
 
     private static Matcher<IMessage> hasFile(final Class<?> target) {

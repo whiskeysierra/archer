@@ -1,10 +1,10 @@
-package org.example.bravo;
+package org.example.logic;
 
 /*
  * ⁣​
  * Azure: AspectJ
  * ⁣⁣
- * Copyright (C) 2015 whiskeysierra
+ * Copyright (C) 2015 - 2016 whiskeysierra
  * ⁣⁣
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,19 +20,16 @@ package org.example.bravo;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Persistence;
+import io.github.whiskeysierra.azure.Logic;
+import org.example.SomeModel;
 
-@Persistence
-public class BravoRepository {
+@Logic
+public final class ModelCallingLogic {
 
-    private final BravoService service;
-
-    public BravoRepository(BravoService service) {
-        this.service = service;
-    }
+    private SomeModel model;
     
-    public void perform() {
-        service.perform();
+    public void send() {
+        model.identify();
     }
 
 }

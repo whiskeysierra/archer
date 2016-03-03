@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example.library;
 
 /*
  * ⁣​
@@ -20,19 +20,16 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Queue;
+import io.github.whiskeysierra.azure.Library;
+import org.example.SomeResource;
 
-@Queue
-public class AlphaQueue {
-    
-    private final AlphaService service;
+@Library
+public final class ResourceCallingLibrary {
 
-    public AlphaQueue(AlphaService service) {
-        this.service = service;
-    }
+    private SomeResource resource;
     
-    public void perform() {
-        service.perform();
+    public void send() {
+        resource.receive();
     }
-    
+
 }

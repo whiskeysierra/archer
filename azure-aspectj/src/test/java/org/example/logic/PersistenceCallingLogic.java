@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.azure;
+package org.example.logic;
 
 /*
  * ⁣​
@@ -20,22 +20,16 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
-import com.google.common.collect.ForwardingList;
-import org.aspectj.bridge.IMessage;
+import io.github.whiskeysierra.azure.Logic;
+import org.example.SomePersistence;
 
-import java.util.List;
+@Logic
+public final class PersistenceCallingLogic {
 
-public final class Compilation extends ForwardingList<IMessage> {
+    private SomePersistence persistence;
 
-    private final List<IMessage> messages;
-
-    public Compilation(List<IMessage> messages) {
-        this.messages = messages;
+    public void send() {
+        persistence.persist();
     }
-
-    @Override
-    protected List<IMessage> delegate() {
-        return messages;
-    }
-
+    
 }

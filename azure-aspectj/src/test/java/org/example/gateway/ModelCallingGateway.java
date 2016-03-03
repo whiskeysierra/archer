@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example.gateway;
 
 /*
  * ⁣​
@@ -20,10 +20,16 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Library;
+import io.github.whiskeysierra.azure.Gateway;
+import org.example.SomeModel;
 
-@Library
-public class AlphaLibrary {
+@Gateway
+public final class ModelCallingGateway {
 
+    private SomeModel model;
+    
+    public void send() {
+        model.identify();
+    }
 
 }

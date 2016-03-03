@@ -1,10 +1,10 @@
-package org.example.bravo;
+package org.example.library;
 
 /*
  * ⁣​
  * Azure: AspectJ
  * ⁣⁣
- * Copyright (C) 2015 whiskeysierra
+ * Copyright (C) 2015 - 2016 whiskeysierra
  * ⁣⁣
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +20,16 @@ package org.example.bravo;
  * ​⁣
  */
 
-public class BravoSomething {
+import io.github.whiskeysierra.azure.Library;
+import org.example.SomePersistence;
 
+@Library
+public final class PersistenceCallingLibrary {
+
+    private SomePersistence persistence;
+
+    public void send() {
+        persistence.persist();
+    }
+    
 }

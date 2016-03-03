@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example.library;
 
 /*
  * ⁣​
@@ -20,19 +20,16 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Scheduler;
+import io.github.whiskeysierra.azure.Library;
+import org.example.SomeLibrary;
 
-@Scheduler
-public class AlphaScheduler {
+@Library
+public final class LibraryCallingLibrary {
+
+    private SomeLibrary library;
     
-    private final AlphaService service;
-
-    public AlphaScheduler(AlphaService service) {
-        this.service = service;
+    public void send() {
+        library.perform();
     }
 
-    public void perform() {
-        service.perform();
-    }
-    
 }

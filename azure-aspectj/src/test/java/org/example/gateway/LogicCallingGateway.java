@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.azure;
+package org.example.gateway;
 
 /*
  * ⁣​
@@ -20,13 +20,16 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
-import org.junit.Test;
+import io.github.whiskeysierra.azure.Gateway;
+import org.example.SomeLogic;
 
-public final class LayerPolicyTest {
+@Gateway
+public final class LogicCallingGateway {
 
-    @Test
-    public void shouldNotAllowBeingInTwoLayersAtOnce() {
-        
+    private SomeLogic logic;
+    
+    public void send() {
+        logic.process();
     }
 
 }

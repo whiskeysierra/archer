@@ -1,4 +1,4 @@
-package org.example.bravo;
+package org.example.library;
 
 /*
  * ⁣​
@@ -20,13 +20,16 @@ package org.example.bravo;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Scheduler;
+import io.github.whiskeysierra.azure.Library;
+import org.example.SomeModel;
 
-@Scheduler
-public class BravoScheduler {
+@Library
+public final class ModelCallingLibrary {
 
-    public void perform() {
-
+    private SomeModel model;
+    
+    public void send() {
+        model.identify();
     }
 
 }

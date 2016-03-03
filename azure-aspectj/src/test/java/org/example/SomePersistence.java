@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example;
 
 /*
  * ⁣​
@@ -20,10 +20,13 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Model;
+import io.github.whiskeysierra.azure.Persistence;
 
-@Model
-public class AlphaModel {
+@Persistence
+public final class SomePersistence {
 
+    public void persist() {
+        
+    }
 
 }

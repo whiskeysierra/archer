@@ -1,4 +1,4 @@
-package org.example.bravo;
+package org.example.gateway;
 
 /*
  * ⁣​
@@ -20,13 +20,16 @@ package org.example.bravo;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Queue;
+import io.github.whiskeysierra.azure.Gateway;
+import org.example.SomeGateway;
 
-@Queue
-public class BravoQueue {
+@Gateway
+public final class GatewayCallingGateway {
 
-    public void perform() {
-
+    private SomeGateway gateway;
+    
+    public void send() {
+        gateway.send();
     }
 
 }

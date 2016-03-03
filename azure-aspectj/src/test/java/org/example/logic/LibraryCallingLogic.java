@@ -1,4 +1,4 @@
-package io.github.whiskeysierra.azure;
+package org.example.logic;
 
 /*
  * ⁣​
@@ -20,13 +20,16 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
-import org.junit.Test;
+import io.github.whiskeysierra.azure.Logic;
+import org.example.SomeLibrary;
 
-public final class LayerPolicyTest {
+@Logic
+public final class LibraryCallingLogic {
 
-    @Test
-    public void shouldNotAllowBeingInTwoLayersAtOnce() {
-        
+    private SomeLibrary library;
+    
+    public void send() {
+        library.perform();
     }
 
 }

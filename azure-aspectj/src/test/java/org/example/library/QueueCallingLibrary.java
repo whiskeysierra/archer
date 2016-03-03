@@ -1,4 +1,4 @@
-package org.example.alpha;
+package org.example.library;
 
 /*
  * ⁣​
@@ -20,13 +20,16 @@ package org.example.alpha;
  * ​⁣
  */
 
-import io.github.whiskeysierra.azure.Persistence;
+import io.github.whiskeysierra.azure.Library;
+import org.example.SomeQueue;
 
-@Persistence
-public class AlphaRepository {
+@Library
+public final class QueueCallingLibrary {
 
-    public void perform() {
-        
+    private SomeQueue queue;
+
+    public void send() {
+        queue.take();
     }
-
+    
 }
