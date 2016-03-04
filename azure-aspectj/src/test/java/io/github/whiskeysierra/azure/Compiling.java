@@ -20,6 +20,7 @@ package io.github.whiskeysierra.azure;
  * ​⁣
  */
 
+import com.google.common.collect.Lists;
 import org.aspectj.bridge.IMessage;
 import org.aspectj.bridge.MessageHandler;
 import org.aspectj.tools.ajc.Main;
@@ -83,12 +84,18 @@ public interface Compiling {
 
     String errorMessage();
     
-    default void allow(final Class<?> unit, final Class<?> target) throws IOException {
-        assertThat(compile(unit, target), hasNoErrors());
+    default void allow(final Class<?> unit, final Class<?>... classes) throws IOException {
+        final List<IMessage> compile = compile(unit, classes);
+        assertThat(compile, hasNoErrors());
     }
 
-    default void deny(final Class<?> unit, final Class<?> target) throws IOException {
-        assertThat(compile(unit, target), hasError(unit, containsString(errorMessage())));
+    default void deny(final Class<?> unit, final Class<?>... classes) throws IOException {
+        final List<IMessage> compile = compile(unit, classes);
+        assertThat(compile, hasError(unit, containsString(errorMessage())));
+    }
+
+    default List<IMessage> compile(Class<?> unit, Class<?>[] classes) throws IOException {
+        return compile(toArray(Lists.asList(unit, classes), Class.class));
     }
 
 

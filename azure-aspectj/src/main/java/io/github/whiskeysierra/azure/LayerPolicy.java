@@ -26,10 +26,8 @@ import org.aspectj.lang.annotation.DeclareError;
 @Aspect
 public final class LayerPolicy {
 
-    @DeclareError("staticinitialization(!@(@io.github.whiskeysierra.azure.Layer *) *)")
-    public static final String LAYER = "must be part of a layer";
-    
-    // TODO what about multiple layer annotations
+    @DeclareError("staticinitialization(!@(@Layer *) *)")
+    public static final String MISSING_LAYER = "must be part of a layer";
 
     @DeclareError("within(@Gateway *) && call(* (@(@Layer *) !@(Gateway || Library || Model) *).*(..))")
     public static final String GATEWAY = "may only call @Gateway, @Library and @Model";
