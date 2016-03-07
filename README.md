@@ -1,6 +1,11 @@
 # Azure
 
-[![Blueprint](docs/blueprint.jpg)](https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_station_blueprints.jpg) 
+[![Blueprint](docs/blueprint.jpg)](https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_station_blueprints.jpg)
+
+[![Build Status](https://img.shields.io/travis/whiskeysierra/azure.svg)](https://travis-ci.org/whiskeysierra/azure)
+[![Coverage Status](https://img.shields.io/coveralls/whiskeysierra/azure.svg)](https://coveralls.io/r/whiskeysierra/azure)
+[![Release](https://img.shields.io/github/release/whiskeysierra/azure.svg)](https://github.com/zalando/whiskeysierra/azure)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.whiskeysierra/azure.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.whiskeysierra/azure)
 
 *Azure* is an *architectural enforcement framework* for Java. 
 
