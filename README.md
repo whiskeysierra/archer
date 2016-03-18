@@ -1,6 +1,6 @@
 # Archer
 
-[![Archer](docs/archer.jpg)](https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_station_blueprints.jpg) 
+[![Archer](docs/archer.jpg)](https://pixabay.com/en/archer-bronze-sta-statue-arrow-772979/) 
 
 [![Build Status](https://img.shields.io/travis/whiskeysierra/azure.svg)](https://travis-ci.org/whiskeysierra/azure)
 [![Coverage Status](https://img.shields.io/coveralls/whiskeysierra/azure.svg)](https://coveralls.io/r/whiskeysierra/azure)
