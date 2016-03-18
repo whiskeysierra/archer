@@ -2,10 +2,10 @@
 
 [![Archer](docs/archer.jpg)](https://pixabay.com/en/archer-bronze-sta-statue-arrow-772979/) 
 
-[![Build Status](https://img.shields.io/travis/whiskeysierra/azure.svg)](https://travis-ci.org/whiskeysierra/azure)
-[![Coverage Status](https://img.shields.io/coveralls/whiskeysierra/azure.svg)](https://coveralls.io/r/whiskeysierra/azure)
-[![Release](https://img.shields.io/github/release/whiskeysierra/azure.svg)](https://github.com/zalando/whiskeysierra/azure)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.whiskeysierra/azure.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.whiskeysierra/azure)
+[![Build Status](https://img.shields.io/travis/whiskeysierra/archer.svg)](https://travis-ci.org/whiskeysierra/archer)
+[![Coverage Status](https://img.shields.io/coveralls/whiskeysierra/archer.svg)](https://coveralls.io/r/whiskeysierra/archer)
+[![Release](https://img.shields.io/github/release/whiskeysierra/archer.svg)](https://github.com/zalando/whiskeysierra/archer)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.whiskeysierra/archer.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.whiskeysierra/archer)
 
 *Archer* is an *architectural enforcement framework* for Java. 
 
