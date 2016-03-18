@@ -1,21 +1,21 @@
-# Azure
+# Archer
 
-[![Blueprint](docs/blueprint.jpg)](https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_station_blueprints.jpg)
+[![Archer](docs/archer.jpg)](https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_station_blueprints.jpg) 
 
 [![Build Status](https://img.shields.io/travis/whiskeysierra/azure.svg)](https://travis-ci.org/whiskeysierra/azure)
 [![Coverage Status](https://img.shields.io/coveralls/whiskeysierra/azure.svg)](https://coveralls.io/r/whiskeysierra/azure)
 [![Release](https://img.shields.io/github/release/whiskeysierra/azure.svg)](https://github.com/zalando/whiskeysierra/azure)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.whiskeysierra/azure.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.whiskeysierra/azure)
 
-*Azure* is an *architectural enforcement framework* for Java. 
+*Archer* is an *architectural enforcement framework* for Java. 
 
 ## Dependency
 
 ```xml
 <dependency>
   <groupId>io.github.whiskeysierra</groupId>
-  <artifactId>azure</artifactId>
-  <version>${azure.version}</version>
+  <artifactId>archer</artifactId>
+  <version>${archer.version}</version>
 </dependency>
 ```
 

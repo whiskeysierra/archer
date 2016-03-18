@@ -8,17 +8,17 @@
     </prerequisites>
 
     <groupId>io.github.whiskeysierra</groupId>
-    <artifactId>azure-parent</artifactId>
+    <artifactId>archer-parent</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Azure</name>
-    <url>https://github.com/whiskeysierra/azure</url>
+    <name>Archer</name>
+    <url>https://github.com/whiskeysierra/archer</url>
 
     <scm>
-        <url>https://github.com/whiskeysierra/azure</url>
-        <connection>scm:git:git@github.com:whiskeysierra/azure.git</connection>
-        <developerConnection>scm:git:git@github.com:whiskeysierra/azure.git</developerConnection>
+        <url>https://github.com/whiskeysierra/archer</url>
+        <connection>scm:git:git@github.com:whiskeysierra/archer.git</connection>
+        <developerConnection>scm:git:git@github.com:whiskeysierra/archer.git</developerConnection>
     </scm>
 
     <organization>
@@ -43,9 +43,9 @@
     </developers>
 
     <modules>
-        <module>azure-annotations</module>
-        <module>azure-aspectj</module>
-        <module>azure-spring</module>
+        <module>archer-annotations</module>
+        <module>archer-aspectj</module>
+        <module>archer-spring</module>
     </modules>
 
     <properties>
@@ -63,20 +63,20 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- azure -->
+            <!-- archer -->
             <dependency>
                 <groupId>io.github.whiskeysierra</groupId>
-                <artifactId>azure-annotations</artifactId>
+                <artifactId>archer-annotations</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.whiskeysierra</groupId>
-                <artifactId>azure-aspectj</artifactId>
+                <artifactId>archer-aspectj</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.whiskeysierra</groupId>
-                <artifactId>azure-spring</artifactId>
+                <artifactId>archer-spring</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
