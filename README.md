@@ -46,11 +46,13 @@ Add the following dependencies to your project:
   <groupId>io.github.whiskeysierra</groupId>
   <artifactId>archer-annotations</artifactId>
   <version>${archer.version}</version>
+  <scope>provided</scope>
 </dependency>
 <dependency>
   <groupId>io.github.whiskeysierra</groupId>
   <artifactId>archer-aspectj</artifactId>
   <version>${archer.version}</version>
+  <scope>provided</scope>
 </dependency>
 ```
 
