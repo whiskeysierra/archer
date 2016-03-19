@@ -19,16 +19,16 @@ by annotations and any violation is reported early at compile time.
 
 *Archer* defines several different layers:
 
-| Annotation     | Description                           |
-|----------------|---------------------------------------|
-| `@Gateway`     | External service client               |
-| `@Library`     | Shared code between any of the layers |
-| `@Logic`       | Business logic                        |
-| `@Model`       | Business or domain model              |
-| `@Persistence` | Database access layer                 |
-| `@Queue`       | Asynchronous message queue client     |
-| `@Resource`    | Web Service/API                       |
-| `@Scheduler`   | Background Job                        |
+| Layer/Annotation | Description                           |
+|------------------|---------------------------------------|
+| `@Gateway`       | External service client               |
+| `@Library`       | Shared code between any of the layers |
+| `@Logic`         | Business logic                        |
+| `@Model`         | Business or domain model              |
+| `@Persistence`   | Database access layer                 |
+| `@Queue`         | Asynchronous message queue client     |
+| `@Resource`      | Web Service/API                       |
+| `@Scheduler`     | Background Job                        |
 
 [![Access policy diagram](https://docs.google.com/drawings/d/1bGUg6tv4zDea3-akWn33ky5NoAOf4988peUxEZGYKd8/pub?w=600)](https://docs.google.com/drawings/d/1bGUg6tv4zDea3-akWn33ky5NoAOf4988peUxEZGYKd8/pub?w=888&h=772)
 
