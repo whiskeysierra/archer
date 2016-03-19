@@ -17,6 +17,19 @@ by annotations and any violation is reported early at compile time.
 - retroactively applicable
 - independent of package structure
 
+*Archer* defines several different layers:
+
+| Annotation     | Description                           |
+|----------------|---------------------------------------|
+| `@Gateway`     | External service client               |
+| `@Library`     | Shared code between any of the layers |
+| `@Logic`       | Business logic                        |
+| `@Model`       | Business or domain model              |
+| `@Persistence` | Database access layer                 |
+| `@Queue`       | Asynchronous message queue client     |
+| `@Resource`    | Web Service/API                       |
+| `@Scheduler`   | Background Job                        |
+
 [![Access policy diagram](https://docs.google.com/drawings/d/1bGUg6tv4zDea3-akWn33ky5NoAOf4988peUxEZGYKd8/pub?w=600)](https://docs.google.com/drawings/d/1bGUg6tv4zDea3-akWn33ky5NoAOf4988peUxEZGYKd8/pub?w=888&h=772)
 
 ## Dependencies
@@ -37,19 +50,6 @@ by annotations and any violation is reported early at compile time.
 TODO example to configure aspectj maven plugin
 
 ## Usage
-
-*Archer* defines several different layers:
-
-| Annotation     | Description                           |
-|----------------|---------------------------------------|
-| `@Gateway`     | External service client               |
-| `@Library`     | Shared code between any of the layers |
-| `@Logic`       | Business logic                        |
-| `@Model`       | Business or domain model              |
-| `@Persistence` | Database access layer                 |
-| `@Queue`       | Asynchronous message queue client     |
-| `@Resource`    | Web Service/API                       |
-| `@Scheduler`   | Background Job                        |
 
 You need to annotate **every class** with one of the layer annotations:
 
