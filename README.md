@@ -56,7 +56,7 @@ Add the following dependencies to your project:
 
 And configure the AspectJ compiler accordingly:
 
-```java
+```xml
 <plugin>
   <groupId>org.codehaus.mojo</groupId>
   <artifactId>aspectj-maven-plugin</artifactId>
