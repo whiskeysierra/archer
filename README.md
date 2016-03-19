@@ -42,12 +42,40 @@ by annotations and any violation is reported early at compile time.
 ```xml
 <dependency>
   <groupId>io.github.whiskeysierra</groupId>
-  <artifactId>archer</artifactId>
+  <artifactId>archer-annotations</artifactId>
   <version>${archer.version}</version>
 </dependency>
+<dependency>
+  <groupId>io.github.whiskeysierra</groupId>
+  <artifactId>archer-aspectj</artifactId>
+  <version>${archer.version}</version>
+</dependency>
+...
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>aspectj-maven-plugin</artifactId>
+      <version>1.8</version>
+      <configuration>
+        <aspectLibraries>
+          <aspectLibrary>
+            <groupId>io.github.whiskeysierra</groupId>
+            <artifactId>archer-aspectj</artifactId>
+          </aspectLibrary>
+        </aspectLibraries>
+      </configuration>
+      <executions>
+        <execution>
+          <goals>
+            <goal>compile</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+<build>
 ```
-
-TODO example to configure aspectj maven plugin
 
 ## Usage
 
