@@ -123,10 +123,7 @@ If you have questions, concerns, bug reports, etc, please file an issue in this 
 To contribute, simply make a pull request and add a brief description (1-2 sentences) of your addition or change. For
 more details check the [contribution guidelines](CONTRIBUTING.md).
 
-## Open source licensing info
-
-[Apache License 2.0](LICENSE)
-
 ## Credits and references
 
-- http://www.jayway.com/2010/03/28/architectural-enforcement-with-aid-of-aspectj/
+- Mattias Severson, [Architectural Enforcement with Aid of AspectJ](http://www.jayway.com/2010/03/28/architectural-enforcement-with-aid-of-aspectj/)
+- Martin Fowler, [Testing Strategies in a Microservice Architecture](http://martinfowler.com/articles/microservice-testing/#anatomy-connections)
