@@ -91,7 +91,7 @@ public class Person {
 
 }
 
-@Repository
+@Persistence
 public class PersonRepository {
 
 }
