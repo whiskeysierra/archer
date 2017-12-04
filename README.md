@@ -7,7 +7,7 @@
 [![Release](https://img.shields.io/github/release/whiskeysierra/archer.svg)](https://github.com/zalando/whiskeysierra/archer)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.whiskeysierra/archer.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.whiskeysierra/archer)
 
-*Archer* is a pre-defined set of *architectural enforcement* rules. The aspect-oriented enforcement of rules is guided
+*Archer* is a pre-defined set of _**Arc**hitectural **E**nforcement_ **R**ules. The aspect-oriented enforcement of rules is guided
 by annotations and any violation is reported early at compile time. 
 
 ## Features
