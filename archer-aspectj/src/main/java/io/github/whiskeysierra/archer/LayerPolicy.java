@@ -53,4 +53,8 @@ public final class LayerPolicy {
     @DeclareError("within(@Scheduler *) && call(* (@(@Layer *) !@(Library || Logic || Model || Scheduler) *).*(..))")
     public static final String SCHEDULER = "may only call @Library, @Logic, @Model and @Scheduler";
 
+    private LayerPolicy() {
+
+    }
+
 }
