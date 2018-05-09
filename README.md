@@ -4,6 +4,7 @@
 
 [![Build Status](https://img.shields.io/travis/whiskeysierra/archer.svg)](https://travis-ci.org/whiskeysierra/archer)
 [![Coverage Status](https://img.shields.io/coveralls/whiskeysierra/archer.svg)](https://coveralls.io/r/whiskeysierra/archer)
+[![Code Quality](https://img.shields.io/codacy/grade/cdd7cef52a664532b323b753e6d4d124/master.svg)](https://www.codacy.com/app/whiskeysierra/archer)
 [![Release](https://img.shields.io/github/release/whiskeysierra/archer.svg)](https://github.com/zalando/whiskeysierra/archer)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.whiskeysierra/archer.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.whiskeysierra/archer)
 
