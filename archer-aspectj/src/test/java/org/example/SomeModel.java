@@ -26,7 +26,7 @@ import io.github.whiskeysierra.archer.Model;
 public final class SomeModel {
 
     public void identify() {
-        
+        // intentionally left blank
     }
 
 }

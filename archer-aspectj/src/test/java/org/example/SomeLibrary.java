@@ -26,7 +26,7 @@ import io.github.whiskeysierra.archer.Library;
 public final class SomeLibrary {
 
     public void perform() {
-        
+        // intentionally left blank
     }
 
 }

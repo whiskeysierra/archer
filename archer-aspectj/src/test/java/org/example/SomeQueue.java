@@ -26,7 +26,7 @@ import io.github.whiskeysierra.archer.Queue;
 public final class SomeQueue {
 
     public void take() {
-        
+        // intentionally left blank
     }
 
 }

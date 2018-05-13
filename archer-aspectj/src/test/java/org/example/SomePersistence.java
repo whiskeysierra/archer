@@ -26,7 +26,7 @@ import io.github.whiskeysierra.archer.Persistence;
 public final class SomePersistence {
 
     public void persist() {
-        
+        // intentionally left blank
     }
 
 }
