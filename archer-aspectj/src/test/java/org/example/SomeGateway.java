@@ -26,7 +26,7 @@ import io.github.whiskeysierra.archer.Gateway;
 public final class SomeGateway {
 
     public void send() {
-        
+        // intentionally left blank
     }
 
 }

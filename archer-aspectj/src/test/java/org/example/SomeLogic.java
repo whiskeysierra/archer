@@ -26,7 +26,7 @@ import io.github.whiskeysierra.archer.Logic;
 public final class SomeLogic {
 
     public void process() {
-        
+        // intentionally left blank
     }
 
 }

@@ -26,7 +26,7 @@ import io.github.whiskeysierra.archer.Scheduler;
 public class SomeScheduler {
 
     public void trigger() {
-        
+        // intentionally left blank
     }
 
 }

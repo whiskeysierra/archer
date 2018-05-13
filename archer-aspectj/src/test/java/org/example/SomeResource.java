@@ -26,7 +26,7 @@ import io.github.whiskeysierra.archer.Resource;
 public final class SomeResource {
 
     public void receive() {
-        
+        // intentionally left blank
     }
 
 }
