@@ -1,10 +1,10 @@
 package org.example.queue;
 
-/*
+/*-
  * ⁣​
  * Archer: AspectJ
  * ⁣⁣
- * Copyright (C) 2015 - 2016 whiskeysierra
+ * Copyright (C) 2015 - 2018 whiskeysierra
  * ⁣⁣
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
