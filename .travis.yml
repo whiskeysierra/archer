@@ -5,10 +5,19 @@ sudo: false
 jdk:
   - oraclejdk8
 
-script: mvn clean verify jacoco:report
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
+
+cache:
+  directories:
+    - $HOME/.m2
+
+script: ./mvnw clean verify
 
 after_success:
-  - mvn coveralls:report
+  - ./mvnw coveralls:report
 
 notifications:
   email:

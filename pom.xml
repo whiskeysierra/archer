@@ -199,8 +199,8 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.ning.maven.plugins</groupId>
-                <artifactId>maven-duplicate-finder-plugin</artifactId>
+                <groupId>org.basepom.maven</groupId>
+                <artifactId>duplicate-finder-maven-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -214,9 +214,9 @@
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>com.ning.maven.plugins</groupId>
-                    <artifactId>maven-duplicate-finder-plugin</artifactId>
-                    <version>1.0.9</version>
+                    <groupId>org.basepom.maven</groupId>
+                    <artifactId>duplicate-finder-maven-plugin</artifactId>
+                    <version>1.2.1</version>
                     <executions>
                         <execution>
                             <phase>validate</phase>
@@ -224,12 +224,14 @@
                                 <goal>check</goal>
                             </goals>
                             <configuration>
-                                <failBuildInCaseOfDifferentContentConflict>true
-                                </failBuildInCaseOfDifferentContentConflict>
+                                <failBuildInCaseOfDifferentContentConflict>true</failBuildInCaseOfDifferentContentConflict>
                                 <failBuildInCaseOfEqualContentConflict>false</failBuildInCaseOfEqualContentConflict>
-                                <ignoredResources>
-                                    <ignoredResource>.*</ignoredResource>
-                                </ignoredResources>
+                                <ignoredClassPatterns>
+                                    <ignoredClassPattern>module-info</ignoredClassPattern>
+                                </ignoredClassPatterns>
+                                <ignoredResourcePatterns>
+                                    <ignoredResourcePattern>.*</ignoredResourcePattern>
+                                </ignoredResourcePatterns>
                             </configuration>
                         </execution>
                     </executions>
