@@ -1,17 +1,24 @@
-#!/usr/bin/env bash
+#!/bin/sh -ex
 
-set -e
+: ${1?"Usage: $0 <major|minor|patch>"}
 
-mvn scm:check-local-modification
+./mvnw scm:check-local-modification
+
+current=$(git describe --abbrev=0)
+release=$(semver ${current} -i $1 --preid RC)
+next=$(semver ${release} -i minor)
 
 # release
-mvn versions:set
-git add pom.xml */pom.xml
-git commit
-mvn clean deploy -P release
-mvn scm:tag
+./mvnw versions:set -D newVersion=${release}
+git add $(find . -name pom.xml)
+git commit -m "Release ${release}"
+./mvnw clean deploy -P release
+./mvnw scm:tag
 
 # next development version
-mvn versions:set
-git add pom.xml */pom.xml
-git commit
+./mvnw versions:set -D newVersion=${next}-SNAPSHOT
+git add $(find . -name pom.xml)
+git commit -m "Development ${next}-SNAPSHOT"
+
+git push
+git push --tags
