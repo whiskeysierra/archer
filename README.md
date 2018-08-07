@@ -2,6 +2,7 @@
 
 [![Archer](docs/archer.jpg)](https://pixabay.com/en/archer-bronze-sta-statue-arrow-772979/) 
 
+[![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html) 
 [![Build Status](https://img.shields.io/travis/whiskeysierra/archer.svg)](https://travis-ci.org/whiskeysierra/archer)
 [![Coverage Status](https://img.shields.io/coveralls/whiskeysierra/archer.svg)](https://coveralls.io/r/whiskeysierra/archer)
 [![Code Quality](https://img.shields.io/codacy/grade/cdd7cef52a664532b323b753e6d4d124/master.svg)](https://www.codacy.com/app/whiskeysierra/archer)
